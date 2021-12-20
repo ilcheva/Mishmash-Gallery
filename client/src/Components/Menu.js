@@ -1,5 +1,6 @@
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Grid from '@mui/material/Grid';
@@ -14,49 +15,49 @@ import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 const Navigation = () => {
     return (
         <Grid item xs='auto' md='auto'>
-            <List dense>
-                <ListItem button>
+            <List dense disablePadding >
+                <ListItemButton selected>
                     <ListItemIcon>
-                        <PostAddIcon />
+                        <PostAddIcon color='primary' />
                     </ListItemIcon>
                     <ListItemText
                         primary="Add post"
                     />
-                </ListItem>
-                <ListItem>
+                </ListItemButton>
+                <ListItemButton>
                     <ListItemIcon>
                         <PermIdentityIcon />
                     </ListItemIcon>
                     <ListItemText
                         primary="Profile"
                     />
-                </ListItem>
-                <ListItem>
+                </ListItemButton>
+                <ListItemButton >
                     <ListItemIcon>
                         <FavoriteBorderIcon />
                     </ListItemIcon>
                     <ListItemText
                         primary="Favorites"
                     />
-                </ListItem>
-                <ListItem button>
+                </ListItemButton>
+                <ListItemButton>
                     <ListItemIcon>
-                        <ArticleOutlinedIcon color='primary' />
+                        <ArticleOutlinedIcon />
                     </ListItemIcon>
                     <ListItemText
                         primary="My posts"
                         color=''
 
                     />
-                </ListItem>
-                <ListItem>
+                </ListItemButton>
+                <ListItemButton>
                     <ListItemIcon>
                         <LogoutIcon />
                     </ListItemIcon>
                     <ListItemText
                         primary="Log out"
                     />
-                </ListItem>
+                </ListItemButton>
 
             </List>
 

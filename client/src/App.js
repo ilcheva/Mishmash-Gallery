@@ -2,6 +2,7 @@ import Header from './Components/Header'
 import Card from './Components/Card'
 import HeaderLoggedIn from './Components/HeaderLoggedIn';
 import Navigation from './Components/Menu';
+import NewFormItem from './Components/NewItemForm';
 import './App.css';
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
       <Card />
       <HeaderLoggedIn />
       <Navigation />
+
+      <NewFormItem />
 
     </div>
   );

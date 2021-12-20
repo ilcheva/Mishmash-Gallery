@@ -12,7 +12,7 @@ const HeaderLoggedIn = () => {
                 mishmash
             </Typography>
             <Typography align="right" variant='button'>
-                <Button variant="outlined">UserName</Button>
+                <Button variant="text">UserName</Button>
                 <IconButton >                    
                     <ExpandMoreIcon />
                 </IconButton>
