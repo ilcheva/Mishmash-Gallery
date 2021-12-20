@@ -1,8 +1,7 @@
-
-
 .App {
     text-align: center;
     font-family: "Poppins";
+    display: flex;
 }
 
 .App-logo {
