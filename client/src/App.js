@@ -1,5 +1,7 @@
 import Header from './Components/Header'
 import Card from './Components/Card'
+import HeaderLoggedIn from './Components/HeaderLoggedIn';
+import Navigation from './Components/Menu';
 import './App.css';
 
 function App() {
@@ -7,8 +9,9 @@ function App() {
     <div className="App">
       <Header />
       <Card />
-      <Card />
-      <Card />
+      <HeaderLoggedIn />
+      <Navigation />
+
     </div>
   );
 }

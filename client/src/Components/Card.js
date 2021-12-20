@@ -20,10 +20,10 @@ export default function ImgMediaCard() {
                 image="\img\enzo-tommasi-wlxJ4idMTUk-unsplash.jpeg"
             />
             <CardContent>
-                <Typography align='left' gutterBottom variant="h5" component="div">
-                    Lizard
+                <Typography align='justify' gutterBottom variant="h6">
+                    Title
                 </Typography>
-                <CardActions disableSpacing>
+                <CardActions>
                     <IconButton aria-label="add to favorites">
                         <FavoriteIcon />
                     </IconButton>
