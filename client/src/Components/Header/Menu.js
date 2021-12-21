@@ -11,6 +11,12 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LogoutIcon from '@mui/icons-material/Logout';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 
+// Color fot text when selected and spacing between icons and text
+
+
+const text = {
+    color: "#1976d2"
+}
 
 const Navigation = () => {
     return (
@@ -20,7 +26,7 @@ const Navigation = () => {
                     <ListItemIcon>
                         <PostAddIcon color='primary' />
                     </ListItemIcon>
-                    <ListItemText
+                    <ListItemText primaryTypographyProps={{ style: text }}
                         primary="Add post"
                     />
                 </ListItemButton>

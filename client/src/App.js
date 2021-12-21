@@ -1,8 +1,9 @@
-import Header from './Components/Header'
-import Card from './Components/Card'
-import HeaderLoggedIn from './Components/HeaderLoggedIn';
-import Navigation from './Components/Menu';
-import NewFormItem from './Components/NewItemForm';
+import Header from './Components/Header/Header'
+import Card from './Components/Home/Card'
+import HeaderLoggedIn from './Components/Header/HeaderLoggedIn';
+import Navigation from './Components/Header/Menu';
+import NewFormItem from './Components/PostForm/';
+import DetailedPost from './Components/DetailedPost/'
 import './App.css';
 
 function App() {
@@ -11,10 +12,11 @@ function App() {
       <Header />
       <Card />
       <HeaderLoggedIn />
+
       <Navigation />
 
       <NewFormItem />
-
+      <DetailedPost />
     </div>
   );
 }

@@ -8,10 +8,10 @@ import { Typography } from '@mui/material';
 const Header = () => {
     return (
         <header>
-            <Typography align="left" variant='h3' >
+            <Typography align="left" variant='h3' sx={{ fontWeight: '900', fontSize: '34' }}>
                 mishmash
             </Typography>
-            <Typography align="right" variant='button'>
+            <Typography align="right" variant='button' >
                 <Button variant="outlined">Login</Button>
                 <Button variant="outlined">Register</Button>
             </Typography>
