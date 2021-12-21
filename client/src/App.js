@@ -4,6 +4,7 @@ import HeaderLoggedIn from './Components/Header/HeaderLoggedIn';
 import Navigation from './Components/Header/Menu';
 import NewFormItem from './Components/PostForm/';
 import DetailedPost from './Components/DetailedPost/'
+import ModalFrom from './Components/Modal'
 import './App.css';
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
 
       <NewFormItem />
       <DetailedPost />
+
+      <ModalFrom />
     </div>
   );
 }

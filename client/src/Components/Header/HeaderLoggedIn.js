@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const HeaderLoggedIn = () => {
     return (
         <header>
-            <Typography align="left" variant='h3' >
+            <Typography align="left" variant='h3' sx={{ fontWeight: '900', fontSize: '34' }}>
                 mishmash
             </Typography>
             <Typography align="right" variant='button'>
