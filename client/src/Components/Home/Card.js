@@ -12,15 +12,22 @@ import ShareIcon from '@mui/icons-material/Share';
 
 export default function ImgMediaCard() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        // TO DO title with icons 
+        <Card sx={{ maxWidth: 400 }}>
             <CardMedia
                 component="img"
                 alt="painting"
                 // height="240"
                 image="\img\enzo-tommasi-wlxJ4idMTUk-unsplash.jpeg"
             />
-            <CardContent>
-                <Typography align='justify' gutterBottom variant="h6">
+            <CardContent sx={{
+                display: 'flex',
+                alignContent: 'space-between',
+                flexDirection: 'row',
+                justifyContent: ' space-between'
+            }}>
+
+                <Typography align='justify' variant="h5" sx={{ p: 1.5 }} noWrap>
                     Title
                 </Typography>
                 <CardActions>
