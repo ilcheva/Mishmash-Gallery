@@ -7,6 +7,7 @@ import Navigation from './Components/Header/Menu';
 import NewFormItem from './Components/PostForm/';
 import DetailedPost from './Components/DetailedPost/'
 import ModalFrom from './Components/Modal'
+import Home from './Components/Home/Home'
 import './App.css';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route path="/" exact component={Card} />
+        <Route path="/" exact component={Home} />
         <Route path="/login" component={ModalFrom} />
         <Route path="/newPost" component={NewFormItem} />
         <Route path="/detailedPost" component={DetailedPost} />
