@@ -1,20 +1,20 @@
 import Card from './Card'
-import { Grid, Item } from '@mui/material'
+import { Grid, Container } from '@mui/material'
 const Home = () => {
     return (
-        <Grid container spacing={8} justifyContent="center" alignItems="center" sx={{ mt: 5 }} >
-            <Grid item xs={3}>
-
-                <Card />
-
-            </Grid>
-            <Grid item xs={3}>
-                <Card />
-            </Grid>
-            <Grid item xs={3}>
-                <Card />
-            </Grid>
-        </Grid >
+        <Container>
+            <Grid container spacing={6} justifyContent="center" alignItems="center"  >
+                <Grid item xs={4} sx={{ p: 0 }}>
+                    <Card />
+                </Grid>
+                <Grid item xs={4}>
+                    <Card />
+                </Grid>
+                <Grid item xs={4}>
+                    <Card />
+                </Grid>
+            </Grid >
+        </Container>
     )
 }
 export default Home;

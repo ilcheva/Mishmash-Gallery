@@ -1,30 +1,34 @@
 // import * as React from 'react';
 // import ReactDOM from 'react-dom';
 import Button from '@mui/material/Button';
-import { Typography, Box, AppBar, Toolbar } from '@mui/material';
-
-
+import { Typography, AppBar, Toolbar } from '@mui/material';
+import { Link } from 'react-router-dom';
+import CustomizedDialogs from '../Modal/dialog'
 
 
 const Header = () => {
     return (
-        <header>
-            <Box sx={{ flexGrow: 1 }}>
-                <AppBar position='fixed' color='inherit' sx={{ boxShadow: 0 }}>
-                    <Toolbar sx={{ m: 1 }}>
 
-                        <Typography textAlign='left' variant='h3' component='div' sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontWeight: '900', fontSize: '34' }}>
-                            mishmash
-                        </Typography>
 
-                        <Button variant="outlined" sx={{ mr: 1 }}>Login</Button>
+        <AppBar position='fixed' color='inherit' sx={{ boxShadow: 1, px: 10 }}>
+            <Toolbar  >
 
-                        <Button variant="outlined"sx={{ mr: 1 }}>Register</Button>
-                    </Toolbar>
-                </AppBar>
+                <Typography textAlign='left' variant='h3' component='div' sx={{ flexGrow: 1, display: { sx: 'none', sm: 'block' }, fontWeight: '900', fontSize: '34' }}>
+                    mishmash
+                </Typography>
+                {/* <Button variant="outlined" > */}
 
-            </Box>
-        </header>
+                <Link to='/login' component={CustomizedDialogs} >
+                   Login
+                </Link>
+                {/* </Button> */}
+                {/* <Link to='/register' >
+                Register
+                    {/* <Button variant="outlined" >Register</Button> */}
+                {/* </Link> */} 
+            </Toolbar>
+        </AppBar>
+
     )
 }
 export default Header;

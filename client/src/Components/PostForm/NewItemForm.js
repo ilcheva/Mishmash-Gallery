@@ -1,7 +1,5 @@
 
-import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import { Box, TextField, Button } from '@mui/material'
 import { Fragment } from 'react';
 const NewFormItem = () => {
     return (
@@ -17,7 +15,7 @@ const NewFormItem = () => {
                 {/* Upload for img */}
                 <TextField id="outlined-basic" variant="outlined" placeholder="Title" fullWidth />
                 <TextField id="outlined-basic" variant="outlined" placeholder="Description" fullWidth multiline rows={5} />
-                <Button variant="contained" size='medium' fullWidth sx={{  ml: 1 }}>Save</Button>
+                <Button variant="contained" size='medium' fullWidth sx={{ ml: 1 }}>Save</Button>
                 {/* align button with form */}
             </Box>
 
